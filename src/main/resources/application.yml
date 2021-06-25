@@ -1,0 +1,26 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+      server:
+        git:
+          uri: https://github.com/bytedata/environment-variable-repo.git
+          default-label: main
+          username: git username
+          password: your password
+          search-paths:
+          - app*
+          timeout: 10
+          force-pull: true
+        enabled: true
+  application:
+    name: spring-cloud-config-server-gitrepo
+     
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include:  "*"
