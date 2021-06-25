@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PropertyAccessClient2Application {
+public class PropertyAccessClientApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PropertyAccessClient2Application.class, args);
+		SpringApplication.run(PropertyAccessClientApplication.class, args);
 	}
 
 }
